@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udemy kursus</title>
+    <style>
+        body{
+            background-color: #333;
+            color: #fff;
+            font-size: large;
+        }
+        #sendItem {
+            background-color: orange;
+            width: 200px;
+            padding: 30px;
+            margin: 300px auto;
+            position: relative;
+            transition: 3s all;
+            left: 0;
+        }
+        .leftTrans{
+        position: absolute;
+        left: 3000px !important;
+    }
+    </style>
+    <script type="text/javascript">
+
+        /* function pending(pendingTime) {
+            switch(pendingTime) {
+                case 1:
+                pendingMessage(pendingTime);
+             break;
+                 case 2:
+                 pendingMessage(pendingTime); 
+           break;
+                 case 3:
+                 pendingMessage(pendingTime); 
+           break;
+                 default:
+                 pendingMessage(pendingTime);
+           break;
+            }
+        }
+        function pendingMessage(time) {
+            alert("You gotta wait " + time + " minutes");
+        } */
+       /* let loopNum = 50;
+        let text = "I will never ride my hamster-mobile to school again, ever.<br>";
+
+       function writeLineMachine(lineText) {
+
+        for( i=0 ; i < loopNum ; i++) {
+
+            write(lineText);
+        }
+       }
+       function write(lineText) {
+
+        document.write(lineText);
+       }
+
+       function startMachine(lineText) {
+        writeLineMachine(lineText);
+       }
+       startMachine(text);
+ */
+/* let names = new Array("Nimeta Mats", "Suur Peeter","Väike Ants","Lödi Pats");
+document.write(names[1] + "<br>");
+names[1] = "Pets";
+document.write(names[1] + "<br>");
+names.push("Kaarel", "Toomas", "Teet");
+names[5] = "Aliss";
+document.write(names + "<br>");
+names.sort();
+document.write(names + "<br>");
+names.reverse();
+document.write(names + "<br>");
+ */
+function validation() {
+    let password = document.getElementById("password").value;
+    if(password != "1234"){
+    alert("Incorrect password!");
+    }else{
+        let y = document.getElementById("sendItem");
+        y.classList.add("leftTrans");
+        
+    }
+}
+
+
+            </script>
+        </head>
+        <body>
+            <!-- <h3>Pending machine</h3>
+
+            <input type="button" value="1" onclick="pending('1')">
+            <input type="button" value="2" onclick="pending('2')">
+            <input type="button" value="3" onclick="pending('6')">
+            <input type="button" value="4" onclick="pending('9')">  -->
+
+            <div id="sendItem">
+                <form>
+                    Password: <br>
+                    <br>
+                    <input type="password" id="password" placeholder="Password">
+                    <br>
+                    <br>
+                    <input type="button" id="submit" value="send!" onclick="validation();">
+                </form>
+            </div>
+
+
+
+
+        </body>
+        </html>
